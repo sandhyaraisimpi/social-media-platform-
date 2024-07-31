@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>devsi Media App</h1>
+        </header>
+        <main>
+            <div id="create-post">
+                <h2>Create a Post</h2>
+                <textarea id="post-content" placeholder="What's on your mind?"></textarea>
+                <input type="file" id="post-media" accept="image/*,video/*">
+                <button id="post-button">Share</button>
+            </div>
+            <div id="posts">
+                <h2>Posts</h2>
+                <!-- Posts will be dynamically added here -->
+            </div>
+            <div id="trending">
+                <h2>Trending</h2>
+                <!-- Trending posts will be displayed here -->
+            </div>
+        </main>
+        <aside>
+            <div id="notifications">
+                <h2>Notifications</h2>
+                <!-- Notifications will be displayed here -->
+            </div>
+            <div class="user-profile" id="user-1">
+                <h3>User 1</h3>
+                <button id="follow-button-user-1" onclick="followUser('user-1')">Follow</button>
+            </div>
+            <div class="user-profile" id="user-2">
+                <h3>User 2</h3>
+                <button id="follow-button-user-2" onclick="followUser('user-2')">Follow</button>
+            </div>
+        </aside>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
